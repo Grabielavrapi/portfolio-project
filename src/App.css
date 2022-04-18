@@ -40,11 +40,12 @@
   --primary-white:#fff;
   --primary-orange:#f9ab00;
   --primary-dark:rgba(255,255,255,0);
-  --primary-violet:#5135ef;
+  --primary-red:#eb190a;
+  --primary-hover-red: #f33501
 }
 
 body {
-  font-family: "Roboto Condesed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif, !important;
 }
 .logo {
   width:14.4rem;
@@ -62,7 +63,6 @@ nav ul li {
   margin-left: 0.75rem;
   color:var(--primary-white)!important ;
   border-top: 0.1875rem solid var(--primary-dark);
-  
 }
 .navbar-brand {
   max-width: 17.25rem;
@@ -84,15 +84,22 @@ background: var(--primary-white);
     border-top: 0.1875rem solid var(--primary-orange);
 
 }
+
+/*********HEADER*****/
 .header-wraper {
 position: relative;
-background: url(backgroundd.jpg) no-repeat;
+background: url(wall-and-laptop-background.jpg) no-repeat;
 background-size: cover;
 background-position: center;
 height: 90vh;
 }
 .main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -101,36 +108,64 @@ height: 90vh;
   z-index: 1;
 }
 .main-info h1 {
-  color: black;
+  color:var(--primary-orange);
   text-transform: uppercase;
 }
+/*********TYPED TEXT*****/
 .typed-text {
   font-size:2rem;
-  color: #282c34;
+  color: var(--primary-white);
 }
+/*-------- HEADER MAIN OFFER BUTTON ---------------*/
 .btn-main-offer {
-  border: 1px solid var(--primary-violet);
+  border: 1px solid var(--primary-red);
   text-transform: uppercase;
   border-radius: 0;
-padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-color: #000000;
-margin:2rem;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
 }
+
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color: #5135ef;
+  background-color: var(--primary-hover-red);
   color: var(--primary-white);
   transition:  .2s ease-in-out;
-  -webkit-transition:  .2s ease-in-out;
-  -moz-transition:  .2s ease-in-out;
-  -ms-transition:  .2s ease-in-out;
-  -o-transition:  .2s ease-in-out;
 }
+
 @media(max-width: 768px){
   .main-info h1 {
     font-size: 1.7rem !important;
   }
   .typed-text {
     font-size: 1.3rem !important;
+  }
+}
+/************************ ABOUT ME *********************************/
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 16rem;
+  border-radius: 10%;
+  padding: .3rem;
+  border: 1px solid var(--primary-orange);
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.about-heading {
+  color:black;
+  text-transform: uppercase;
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 10rem;
   }
 }

@@ -13,30 +13,33 @@ const Navbar = () => {
   </button>
 
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav ms-auto">
-      <li className="nav-item active">
-        <a className="nav-link" href="#">Home <span class="sr-only"></span></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="#">About me</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="#">Services</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="#">How work</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="#">Portfolio</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
-  </div>
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">about me</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">services</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">how work</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">portfolio</a>
+            </li>
 
-</nav>
+            <li className="nav-item">
+              <a className="nav-link" href="#">contacts</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
   )
 }
 
