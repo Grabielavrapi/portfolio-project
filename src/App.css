@@ -141,7 +141,7 @@ height: 90vh;
 .btn-main-offer:hover {
   text-decoration: none;
   background-color: var(--primary-hover-red);
-  color: var(--primary-white);
+  color: var(--primary-red);
   transition:  .2s ease-in-out;
 }
 
@@ -221,6 +221,7 @@ height: 90vh;
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background:rgb(217, 214, 214);
+  transition: 0.3s ease-in-out;
 }
 
 .services .box:hover {
@@ -253,7 +254,7 @@ height: 90vh;
 
 .experience h1 {
   text-transform: uppercase;
-  color: var(--primary-orange);
+  color: var(--primary-dark);
 }
 
 .experience-wrapper::before {
@@ -326,5 +327,51 @@ height: 90vh;
       float: none;
       direction: ltr; 
       width: 100%;
+    }
+  }
+  /************************ PORTFOLIO *********************************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-black);
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.7rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+  text-align: center;
+}
+
+/*------------ MEDIA ------------------*/
+@media(max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media(max-height: 570px) {
+.popupbox-wrapper {
+  height: 100%;
+}
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media(max-height: 280px) {
+  .popupbox-wrapper {
+    height: 90%;
+  }
+    .portfolio-image-popupbox {
+      width: 30%;
     }
   }
